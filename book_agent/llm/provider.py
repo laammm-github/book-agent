@@ -1,16 +1,18 @@
-"""LLM provider abstraction for Book Agent."""
-
 from abc import ABC, abstractmethod
+from typing import Iterable
 
 
 class LLMProvider(ABC):
+    """Language model provider interface."""
+
     @abstractmethod
-    def chat(self, prompt: str) -> str:
+    def chat(self, messages: list[dict[str, str]], **kwargs):
         raise NotImplementedError
 
+    @abstractmethod
+    def complete(self, prompt: str, **kwargs):
+        raise NotImplementedError
 
-class MockLLMProvider(LLMProvider):
-    """Offline provider used for development and tests."""
-
-    def chat(self, prompt: str) -> str:
-        return f"Book Agent response: {prompt}"
+    @abstractmethod
+    def stream(self, messages: list[dict[str, str]], **kwargs) -> Iterable[str]:
+        raise NotImplementedError
