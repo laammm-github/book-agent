@@ -2,11 +2,11 @@
 
 ## Current Phase
 
-Phase 1 - Agent Runtime
+Phase 2 - Book Understanding Pipeline
 
 ## Current Status
 
-Completed
+In Progress
 
 ## Completed
 
@@ -23,39 +23,46 @@ Completed
 - [x] Context
 - [x] Tests
 - [x] LLM Adapter
+- [x] Book knowledge models foundation
+- [x] Book loader abstraction
+- [x] TXT loader
+- [x] PDF loader foundation
+- [x] EPUB loader foundation
+- [x] Chapter parser foundation
+- [x] Metadata parser foundation
 
-## Phase 1 Validation
+## Phase 2 In Progress
 
-Completed runtime foundations:
+Completed:
+- Book domain models
+- Loader interfaces
+- Initial file format loaders
+- Chapter parsing foundation
 
-- AgentRuntime lifecycle execution
-- AgentContext session/task/history/memory hook support
-- LLM provider abstraction with mock implementation
-- Runtime and context test coverage
-
-## Next Phase
-
-Phase 2 - Book Understanding Pipeline
-
-Tasks:
-1. Add book file loaders.
-2. Add document parsers.
-3. Add chapter and metadata models.
+Next tasks:
+1. Complete real PDF extraction.
+2. Complete EPUB extraction.
+3. Add parser integration pipeline.
+4. Add knowledge object generation.
 
 ## Latest Changes
 
 Date: 2026-08-08
 
 Changes:
-- Enhanced AgentContext for future Memory System integration.
-- Added LLM provider abstraction and mock provider.
-- Added runtime validation tests.
+- Started Phase 2 Book Understanding Pipeline.
+- Added Book and Chapter models.
+- Added loader architecture for TXT/PDF/EPUB.
+- Added chapter and metadata parsers.
 
 Commits:
-- 569f1058 Context enhancement
-- c00d337d LLM adapter interface
-- 8efdef27 Mock LLM provider
-- 982b70e0 Runtime tests
+- df94d2f6 Book knowledge models
+- 9be4af21 Loader abstraction
+- db1af2b3 TXT loader
+- 4fc4e6da PDF loader foundation
+- a2567fc7 EPUB loader foundation
+- f31c568e Chapter parser
+- 423c89e1 Metadata parser
 
 ## Development Notes
 
