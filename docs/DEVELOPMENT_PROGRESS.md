@@ -16,35 +16,35 @@ Agent runtime foundation is being implemented.
 - [x] Skill registry foundation
 - [x] Tool abstraction foundation
 - [x] Tool registry foundation
+- [x] Agent lifecycle management foundation
+- [x] Runtime execution executor foundation
 
 ## In Progress
 
-- [ ] Agent lifecycle management
-- [ ] Runtime execution loop improvements
-- [ ] Skill and Tool integration
-- [ ] Runtime tests
+- [ ] Integrate SkillRegistry into Agent runtime
+- [ ] Integrate ToolRegistry into Agent runtime
+- [ ] Add complete execution pipeline
+- [ ] Add runtime tests
 
 ## Next Tasks
 
-1. Integrate SkillRegistry into Agent runtime.
-2. Integrate ToolRegistry into Agent runtime.
-3. Add execution pipeline.
-4. Add unit tests for runtime components.
+1. Connect runtime with skill and tool registries.
+2. Add context-aware execution flow.
+3. Add unit tests for runtime components.
+4. Prepare LLM adapter interface.
 
 ## Latest Changes
 
 Date: 2026-08-08
 
 Changes:
-- Added skill registry implementation.
-- Added tool abstraction and registry.
+- Added lifecycle state management.
+- Added execution executor foundation.
 - Continued Phase 1 Agent Runtime development.
 
 Commits:
-- a13520b Skill registry foundation
-- e12f577 Tools package
-- bfa3496 Tool abstraction
-- 2781dd5 Tool registry
+- 39d945e Agent lifecycle management
+- e7bb3d0 Agent execution executor
 
 ## Development Notes
 
