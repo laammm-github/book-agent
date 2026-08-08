@@ -6,7 +6,7 @@ Phase 1 - Agent Runtime
 
 ## Current Status
 
-Agent runtime foundation is being implemented.
+Agent runtime integration is being implemented.
 
 ## Completed
 
@@ -18,33 +18,33 @@ Agent runtime foundation is being implemented.
 - [x] Tool registry foundation
 - [x] Agent lifecycle management foundation
 - [x] Runtime execution executor foundation
+- [x] Runtime lifecycle integration
+- [x] Executor integration
 
 ## In Progress
 
-- [ ] Integrate SkillRegistry into Agent runtime
-- [ ] Integrate ToolRegistry into Agent runtime
-- [ ] Add complete execution pipeline
-- [ ] Add runtime tests
+- [ ] Runtime tests
+- [ ] Context-aware execution improvements
+- [ ] LLM adapter interface
 
 ## Next Tasks
 
-1. Connect runtime with skill and tool registries.
-2. Add context-aware execution flow.
-3. Add unit tests for runtime components.
-4. Prepare LLM adapter interface.
+1. Add runtime unit tests.
+2. Add LLM provider abstraction.
+3. Complete Phase 1 validation.
+4. Start Phase 2 book ingestion pipeline.
 
 ## Latest Changes
 
 Date: 2026-08-08
 
 Changes:
-- Added lifecycle state management.
-- Added execution executor foundation.
-- Continued Phase 1 Agent Runtime development.
+- Integrated AgentRuntime with LifecycleManager.
+- Integrated AgentRuntime with AgentExecutor.
+- Added registry injection support.
 
 Commits:
-- 39d945e Agent lifecycle management
-- e7bb3d0 Agent execution executor
+- 0ee80c9 Runtime lifecycle and executor integration
 
 ## Development Notes
 
