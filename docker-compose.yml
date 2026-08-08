@@ -1,0 +1,20 @@
+services:
+  book-agent-api:
+    build: .
+    container_name: book-agent-api
+    ports:
+      - "8000:8000"
+    environment:
+      - BOOK_AGENT_ENV=development
+    volumes:
+      - ./data:/app/data
+
+  web:
+    image: node:20
+    container_name: book-agent-web
+    working_dir: /app
+    volumes:
+      - ./web:/app
+    command: npm run dev
+    ports:
+      - "3000:3000"
