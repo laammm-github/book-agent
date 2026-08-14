@@ -27,8 +27,8 @@ In Progress
 - [x] Book knowledge models foundation
 - [x] Book loader abstraction
 - [x] TXT loader
-- [x] PDF loader foundation
-- [x] EPUB loader foundation
+- [x] PDF extraction loader
+- [x] EPUB extraction loader
 - [x] Chapter parser foundation
 - [x] Metadata parser foundation
 - [x] Parser integration pipeline foundation
@@ -39,18 +39,19 @@ In Progress
 Completed:
 - Book domain models
 - Loader interfaces
-- Initial file format loaders
+- File format loaders
+- PDF text extraction foundation
+- EPUB XHTML extraction foundation
 - Chapter parsing foundation
 - Metadata parsing foundation
 - Parser integration pipeline
 - Basic knowledge object generation
 
 Next tasks:
-1. Complete real PDF extraction.
-2. Complete EPUB extraction.
-3. Add book summary generation.
-4. Add key concept extraction.
-5. Prepare RAG knowledge ingestion.
+1. Add book summary generation.
+2. Add key concept extraction.
+3. Prepare RAG knowledge ingestion.
+4. Start Phase 3 retrieval foundation.
 
 ## Latest Changes
 
@@ -58,10 +59,13 @@ Date: 2026-08-14
 
 Changes:
 - Added BookKnowledgePipeline.
-- Connected normalized document parsing with knowledge object generation.
+- Implemented PDF text extraction support.
+- Implemented EPUB XHTML extraction support.
 - Continued Phase 2 book understanding pipeline.
 
 Commits:
+- ae429e82 feat: implement epub extraction loader
+- 88de16aa feat: implement pdf text extraction loader
 - d23b479a feat: add book parser integration pipeline
 
 ## Development Notes
