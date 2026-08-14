@@ -23,29 +23,47 @@ book-agent
 
 ## Phase 1: Agent Runtime
 
-Goal: establish the core agent execution framework.
+Status: Mostly completed foundation
 
-Tasks:
-- [ ] Agent base abstraction
-- [ ] Agent lifecycle management
-- [ ] Skill registration system
-- [ ] Tool execution framework
-- [ ] Session/context management
+Completed:
+- [x] Agent base abstraction
+- [x] Agent lifecycle management
+- [x] Skill registration system foundation
+- [x] Tool abstraction foundation
+- [x] Tool registry foundation
+- [x] Session/context foundation
+- [x] Runtime execution executor foundation
+
+Remaining:
+- [ ] Complete production-grade skill execution workflow
+- [ ] Complete tool execution framework
 
 ## Phase 2: Book Understanding Pipeline
 
+Status: In Progress
+
 Goal: enable book ingestion and understanding.
 
-Tasks:
-- [ ] Book file ingestion
-- [ ] Document parsing
-- [ ] Chapter extraction
-- [ ] Summary generation
-- [ ] Key concept extraction
+Completed:
+- [x] Book file ingestion abstraction
+- [x] Document parsing foundation
+- [x] Chapter extraction foundation
+- [x] Metadata parsing foundation
+- [x] TXT loader
+- [x] PDF loader foundation
+- [x] EPUB loader foundation
+
+Remaining:
+- [ ] Complete PDF extraction
+- [ ] Complete EPUB extraction
+- [ ] Add parser integration pipeline
+- [ ] Generate knowledge objects
+- [ ] Add summary generation
+- [ ] Add key concept extraction
 
 ## Phase 3: RAG Knowledge System
 
-Goal: allow semantic book search and grounded answers.
+Status: Planned
 
 Tasks:
 - [ ] Vector storage
@@ -56,7 +74,7 @@ Tasks:
 
 ## Phase 4: Memory System
 
-Goal: build persistent reading memory.
+Status: Planned
 
 Tasks:
 - [ ] Reading history
@@ -66,7 +84,7 @@ Tasks:
 
 ## Phase 5: Knowledge Graph
 
-Goal: connect concepts across books.
+Status: Planned
 
 Tasks:
 - [ ] Entity extraction
@@ -75,6 +93,8 @@ Tasks:
 - [ ] Thought map generation
 
 ## Phase 6: Product Layer
+
+Status: Planned
 
 Tasks:
 - [ ] Web UI
