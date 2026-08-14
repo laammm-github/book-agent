@@ -31,6 +31,8 @@ In Progress
 - [x] EPUB loader foundation
 - [x] Chapter parser foundation
 - [x] Metadata parser foundation
+- [x] Parser integration pipeline foundation
+- [x] Knowledge object generation foundation
 
 ## Phase 2 In Progress
 
@@ -40,34 +42,27 @@ Completed:
 - Initial file format loaders
 - Chapter parsing foundation
 - Metadata parsing foundation
+- Parser integration pipeline
+- Basic knowledge object generation
 
 Next tasks:
 1. Complete real PDF extraction.
 2. Complete EPUB extraction.
-3. Add parser integration pipeline.
-4. Add knowledge object generation.
-5. Add book summary and concept extraction.
+3. Add book summary generation.
+4. Add key concept extraction.
+5. Prepare RAG knowledge ingestion.
 
 ## Latest Changes
 
-Date: 2026-08-10
+Date: 2026-08-14
 
 Changes:
-- Updated Agent Runtime tests.
-- Added agent registration and named execution validation.
-- Added runtime lifecycle start validation.
+- Added BookKnowledgePipeline.
+- Connected normalized document parsing with knowledge object generation.
 - Continued Phase 2 book understanding pipeline.
 
 Commits:
-- 369473e2 Test: expand agent runtime coverage
-- 5c749bc1 Docs: update phase 2 pipeline progress
-- 423c89e1 Metadata parser
-- f31c568e Chapter parser
-- a2567fc7 EPUB loader foundation
-- 4fc4e6da PDF loader foundation
-- db1af2b3 TXT loader
-- 9be4af21 Loader abstraction
-- df94d2f6 Book knowledge models
+- d23b479a feat: add book parser integration pipeline
 
 ## Development Notes
 
